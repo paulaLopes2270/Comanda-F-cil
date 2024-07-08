@@ -1,11 +1,36 @@
-/* Estilo para a página inicial */
-body {
-  font-family: Arial, sans-serif;
+/* Reset básico */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-main {
-  padding: 20px;
+/* Container principal */
+.container {
+  width: 90%;
+  margin: 20px auto;
 }
+
+/* Estilo para o título */
+.container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.restaurants h2 {
+  text-align: center;
+  margin: 50px 0;  /* Ajusta espaço acima e abaixo do título */
+}
+
+/* Container dos cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px; /* Mantém um grande espaço entre os cards */
+  justify-content: center;
+  padding: 0 100px; /* Aumenta o padding horizontal para criar mais espaço nas bordas */
+}
+
+/* Importa os estilos dos componentes */
+@import url('../Components/Header/header.css');
+@import url('../Components/Footer/footer.css');

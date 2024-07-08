@@ -1,0 +1,32 @@
+/* Estilo para os cards */
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    width: 300px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.card-content p {
+    color: #555;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
