@@ -1,0 +1,80 @@
+/* Estilo para o header */
+.header-container {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Define uma altura fixa para o header */
+  margin: 0 auto; /* Centraliza o container */
+  overflow: hidden; /* Oculta qualquer excesso de imagem */
+}
+
+.header-container::before {
+  content: "";
+  background-image: url('../../Assets/Images/header.jpg'); /* Define a imagem de fundo */
+  background-size: contain; /* Ajusta a imagem para caber no container */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Garante que a imagem fique atrás do conteúdo */
+}
+
+.header-container nav {
+  position: absolute;
+  bottom: 10px;
+  left: 23.7%;
+  transform: translateX(-50%); /* Centraliza horizontalmente o nav */
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para o nav */
+  border-radius: 5px; /* Borda arredondada para o nav */
+  padding: 5px 10px; /* Espaçamento interno para o nav */
+  z-index: 1; /* Garante que o nav fique sobre a imagem */
+}
+
+.header-container nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Usa flexbox para melhor controle do layout */
+  gap: 10px; /* Espaçamento entre os itens */
+}
+
+.header-container nav ul li {
+  display: inline;
+}
+
+.header-container nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px; /* Espaçamento interno para os links */
+  border-radius: 3px; /* Borda arredondada para os links */
+}
+
+.header-container nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Fundo semitransparente para o hover */
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+  .header-container {
+    height: 300px; /* Ajuste a altura para telas menores */
+    padding: 0;
+    margin: 0;
+  }
+
+  .header-container nav ul {
+    flex-direction: column; /* Altera a direção dos itens do menu para coluna */
+    gap: 5px; /* Ajusta o espaçamento entre os itens */
+  }
+
+  .header-container nav {
+    bottom: 5px; /* Ajusta a posição do nav */
+    padding: 5px; /* Ajusta o padding */
+  }
+
+  .header-container nav ul li a {
+    padding: 5px 5px; /* Ajusta o padding dos links */
+  }
+}
