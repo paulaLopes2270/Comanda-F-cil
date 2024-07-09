@@ -1,0 +1,147 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+  font-family: 'TAN Tangkiwood', serif;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Adicionar espaço entre o header e o formulário */
+main {
+  margin-top: 40px; /* Espaço entre o header e o formulário */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Certificar que os elementos internos estão centralizados */
+  min-height: 80vh; /* Certificar que o conteúdo ocupa a maior parte da tela */
+}
+
+/* Diminuir espaço entre o header e a mensagem de sucesso */
+.success-main {
+  margin-top: 10px; /* Diminuir espaço entre o header e a mensagem de sucesso */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 60vh; /* Diminuir a altura mínima */
+}
+
+/* Centralizar e estilizar o formulário de contato */
+form {
+  background: #f4f4f4;
+  padding: 40px;
+  margin: 20px auto; /* Ajuste para centralizar o formulário */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 60%; /* Define a largura do formulário */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: 100%; /* Garantir que os elementos internos ocupem toda a largura do formulário */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  height: 150px; /* Aumenta a altura da área de mensagem */
+}
+
+.form-group button {
+  background:rgb(0, 120, 32);
+  color: #fff;
+  border: 0;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+  background:rgb(4, 140, 41);
+}
+
+/* Botão de voltar */
+.button {
+  display: inline-block;
+  background:rgb(0, 120, 32);
+  color: #fff;
+  padding: 15px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background: rgb(0, 120, 32);
+}
+
+/* Centralizar e estilizar a mensagem de sucesso */
+.success-message {
+  text-align: center;
+  max-width: 600px;
+  background: #f4f4f4;
+  padding: 40px;
+  margin: 20px auto; /* Ajuste para centralizar */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.success-message h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.success-message p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #666;
+}
+
+.success-message .button {
+  background: rgb(0, 120, 32);
+  color: #fff;
+  padding: 15px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.success-message .button:hover {
+  background:rgb(4, 140, 41);
+}
+
+

@@ -1,3 +1,24 @@
+/* Reseta os estilos padrões */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Define a altura mínima da página */
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container principal ocupa todo o espaço disponível */
+main {
+  flex: 1;
+  padding-bottom: 60px; /* Adiciona espaço no final do conteúdo principal */
+}
+
 /* Estilo para o footer */
 .footer-container {
   text-align: center;

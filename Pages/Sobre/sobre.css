@@ -1,0 +1,87 @@
+/* Reseta os estilos padrões */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Define a altura mínima da página */
+html, body {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Container principal */
+main {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9; /* Fundo suave para o conteúdo principal */
+}
+
+/* Estilos para a página Sobre */
+.about {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.about h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em; /* Tamanho maior para destaque */
+  color: #333; /* Cor mais escura para o título */
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5em; /* Tamanho intermediário para o subtítulo */
+  color: #555; /* Cor suave para o subtítulo */
+}
+
+.about p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 1.1em; /* Tamanho maior para melhor legibilidade */
+  color: #666; /* Cor mais suave para o texto */
+}
+
+.about ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: #444; /* Cor das listas */
+}
+
+.about ul li {
+  margin-bottom: 10px;
+}
+
+/* Estilos para a tabela */
+.about table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff; /* Fundo branco para a tabela */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra suave para destaque */
+}
+
+.about th, .about td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  font-size: 1em; /* Tamanho da fonte consistente */
+}
+
+.about th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #333; /* Cor do texto dos cabeçalhos */
+}
+
+.about tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.about tr:hover {
+  background-color: #f1f1f1; /* Fundo diferente ao passar o mouse */
+}

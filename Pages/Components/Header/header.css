@@ -5,6 +5,8 @@
   height: 300px; /* Define uma altura fixa para o header */
   margin: 0 auto; /* Centraliza o container */
   overflow: hidden; /* Oculta qualquer excesso de imagem */
+  font-family: 'TAN Tangkiwood'; /* Define a fonte para o header */ /* Define a fonte para o header */
+  border-bottom: 1px solid rgb(5, 160, 5);
 }
 
 .header-container::before {
@@ -24,9 +26,8 @@
 .header-container nav {
   position: absolute;
   bottom: 10px;
-  left: 23.7%;
+  left: 23.4%;
   transform: translateX(-50%); /* Centraliza horizontalmente o nav */
-  background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para o nav */
   border-radius: 5px; /* Borda arredondada para o nav */
   padding: 5px 10px; /* Espaçamento interno para o nav */
   z-index: 1; /* Garante que o nav fique sobre a imagem */
@@ -46,22 +47,20 @@
 
 .header-container nav ul li a {
   text-decoration: none;
-  color: white;
+  color: rgb(0, 120, 32);
   font-weight: bold;
   padding: 5px 10px; /* Espaçamento interno para os links */
   border-radius: 3px; /* Borda arredondada para os links */
 }
 
 .header-container nav ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.2); /* Fundo semitransparente para o hover */
+  background-color: rgba(98, 214, 112, 0.2); /* Fundo semitransparente para o hover */
 }
 
 /* Estilos Responsivos */
 @media (max-width: 768px) {
   .header-container {
-    height: 300px; /* Ajuste a altura para telas menores */
-    padding: 0;
-    margin: 0;
+    height: 200px; /* Ajuste a altura para telas menores */
   }
 
   .header-container nav ul {
